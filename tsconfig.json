@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        //Выходная директория.
+        "outDir": "./build",
+        //ES на выходе
+        "target": "es5",
+        //Модули на выходе.
+        "module": "es6",
+        //Либы которые разрешает.
+        "lib": ["dom", "dom.iterable", "esnext"],
+        //Разрешает компилить js файлы.
+        "allowJs": true,
+        //Проверять типы, заданные во всех файлах описания типов (*.d.ts).
+        "skipLibCheck": true,
+        //Позволяет импортировать CommonJS пакеты как ES6, активирует allowSyntheticDefaultImports.
+        "esModuleInterop": true,
+        //Разрешить импортировать модули не имеющие внутри себя "import default".
+        "allowSyntheticDefaultImports": true,
+        //Включить ли все строги проверки типов сразу.
+        "strict": true,
+        //Включает режим чувствительности к регистру для импорта файлов.
+        "forceConsistentCasingInFileNames": true,
+        //Стратегия, которая будет использоваться для импорта модулей. Здесь всего две опции: node и classic.
+        "moduleResolution": "node",
+        //Разрешает модулями подключать json.
+        "resolveJsonModule": true,
+        //Обрабатывать каждый файл, как отдельный изолированный модуль.
+        "isolatedModules": true,
+        //Разрешает jsx.
+        "jsx": "react-jsx",
+    },
+    //Директория которую компилит.
+    "include": ["src"],
+    //Декларации
+    "typeRoots": ["./types"],
+}
