@@ -47,11 +47,10 @@
         "webpack-merge": "5.10.0"
     },
     "lint-staged": {
-        "src/**/*.{js,jsx,ts,tsx,json}": [
-            "eslint --fix"
+        "*.{js,jsx,ts,tsx}": [
+            "prettier --write",
+            "eslint  --fix"
         ],
-        "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-            "prettier --write"
-        ]
+        "*.{css,json,md}": "prettier --write"
     }
 }
